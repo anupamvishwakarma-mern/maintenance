@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Maintenance | LearnBuild</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .maintenance {
+            background-color: #f7f3ee;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .maintenance h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+            color: #f15a29;
+        }
+
+        .maintenance p {
+            font-size: 18px;
+            color: #032642;
+        }
+        .maintenance .container .rounder{
+            background-color: #fbe3be;
+            border-radius: 50%;
+            margin: 0 auto;
+            height: 600px;
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .maintenance .rounder img{
+            width: 60%;
+        }
+
+        @media screen and (max-width: 768px) {
+            .maintenance .container .rounder{
+                width: 300px;
+                height: 300px;
+            }
+            .maintenance h1{
+                font-size: 20px;
+            }
+            .maintenance p{
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="maintenance">
+        <div class="container text-center">
+            <div class="rounder">
+                <h1>This site is Under Maintenance</h1>
+                <p>Our website is currently under maintenance. We'll be back soon!</p>
+                <img src="/learnbuild.in/static/images/plug.png" alt="plug out">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
